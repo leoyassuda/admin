@@ -27,6 +27,20 @@ Go to the project directory
   cd admin
 ```
 
+Create a `.env` file in root folder with these values below:
+
+* DJANGO_KEY
+
+ ```bash
+ python -c 'from django.core.management.utils import get_random_secret_key; \
+            print(get_random_secret_key())'
+ ```
+
+* DB_NAME = database name
+* DB_USER = user database
+* DB_PASS = password database
+* CONTACT_EMAIL = It's used in open-api documentation
+
 Start using docker
 
 ```bash
@@ -55,4 +69,5 @@ Open in browser - [swagger-ui](http://localhosr:8000/swagger)
 
 ### Authors
 
-* **Leo Yassuda** - *Initial work* - [Admin](https://github.com/leoyassuda/admin) - Portfolio [leoyas.com](https://leoyas.com)
+* **Leo Yassuda** - *Initial work* - [Admin](https://github.com/leoyassuda/admin) -
+  Portfolio [leoyas.com](https://leoyas.com)
